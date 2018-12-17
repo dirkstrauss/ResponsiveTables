@@ -1,8 +1,8 @@
 ﻿@import "_fonts.scss";
 @import "_variables.scss";
 
-
-table {
+/*Table Style*/
+/*table {
     font-family: $font-main;
 
     caption {
@@ -28,24 +28,10 @@ table {
             }
         }
     }
-}
-
-/*.container {
-    font-family: $font-main;
-
-    .tblheader {
-        font-weight: $bold;
-        font-size: 36px;
-
-        div {
-            font-weight: $bold;
-            font-size: 26px;
-            padding-right: $baseline;
-        }
-    }
 }*/
 
 
+/*Responsive table - Start*/
 /*@media screen and (max-width: 600px) {
     table thead {
         border: none;
@@ -72,13 +58,47 @@ table {
     table td::before {
         content: attr(data-label);
         float: left;
+    }    
+}*/
+/*Responsive table - End*/
+
+
+/*Bootstrap Grid System - Start*/
+/*.container {
+    font-family: $font-main;
+
+    .tblheader {
+        font-weight: $bold;
+        font-size: 36px;
+
+        div {
+            font-weight: $bold;
+            font-size: 26px;
+            padding-right: $baseline;
+        }
     }
 
     .row {
+        div {
+            font-weight: $regular;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        border-bottom: 3px solid #ddd;
+        
         div::before {
             content: attr(data-label);
             float: left;
             padding-right: $baseline;
+        }
+
+        div {
+            border-bottom: 1px solid #ddd;
+            text-align: right;
         }
 
         &.tblheader {
@@ -87,21 +107,10 @@ table {
     }
 }*/
 
-/*@media screen and (max-width: 600px) {
-    .grid-item {
-        div::before {
-            content: attr(data-label);
-            float: left;
-            padding-right: $baseline;
-        }
-
-        &.tblheader {
-            display: none;
-        }
-    }
-}*/
+/*Bootstrap Grid System - End*/
 
 
+/*Isotope Metafizzy - Start*/
 .button-filter {
     margin-bottom: $baseline;
 }
@@ -122,3 +131,4 @@ table {
         }
     }
 }
+/*Isotope Metafizzy - End*/

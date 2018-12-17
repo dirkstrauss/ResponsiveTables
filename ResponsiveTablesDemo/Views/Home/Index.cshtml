@@ -4,7 +4,7 @@
 
 
 @*Plain table*@
-<table>
+@*<table>
         <caption>Planets</caption>
         <thead>
             <tr>
@@ -40,46 +40,46 @@
                 <td>-140</td>
             </tr>
         </tbody>
-    </table>
+    </table>*@
 
 @*Responsive table*@
 @*<table>
-        <caption>Planets</caption>
-        <thead>
-            <tr>
-                <th scope="col">Planet</th>
-                <th scope="col">Diameter (km)</th>
-                <th scope="col">Length of Day (hours)</th>
-                <th scope="col">Mean Temp (C)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-label="Planet">Mercury</td>
-                <td data-label="Diameter (km)">4879</td>
-                <td data-label="Length of Day (hours)">4222.6</td>
-                <td data-label="Mean Temp (C)">167</td>
-            </tr>
-            <tr>
-                <td data-label="Planet">Venus</td>
-                <td data-label="Diameter (km)">12,104</td>
-                <td data-label="Length of Day (hours)">2802.0</td>
-                <td data-label="Mean Temp (C)">464</td>
-            </tr>
-            <tr>
-                <td data-label="Planet">Mars</td>
-                <td data-label="Diameter (km)">6792</td>
-                <td data-label="Length of Day (hours)">24.7</td>
-                <td data-label="Mean Temp (C)">-65</td>
-            </tr>
-            <tr>
-                <td data-label="Planet">Saturn</td>
-                <td data-label="Diameter (km)">120,536</td>
-                <td data-label="Length of Day (hours)">10.7</td>
-                <td data-label="Mean Temp (C)">-140</td>
-            </tr>
-        </tbody>
-    </table>*@
+    <caption>Planets</caption>
+    <thead>
+        <tr>
+            <th scope="col">Planet</th>
+            <th scope="col">Diameter (km)</th>
+            <th scope="col">Length of Day (hours)</th>
+            <th scope="col">Mean Temp (C)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Planet">Mercury</td>
+            <td data-label="Diameter (km)">4879</td>
+            <td data-label="Length of Day (hours)">4222.6</td>
+            <td data-label="Mean Temp (C)">167</td>
+        </tr>
+        <tr>
+            <td data-label="Planet">Venus</td>
+            <td data-label="Diameter (km)">12,104</td>
+            <td data-label="Length of Day (hours)">2802.0</td>
+            <td data-label="Mean Temp (C)">464</td>
+        </tr>
+        <tr>
+            <td data-label="Planet">Mars</td>
+            <td data-label="Diameter (km)">6792</td>
+            <td data-label="Length of Day (hours)">24.7</td>
+            <td data-label="Mean Temp (C)">-65</td>
+        </tr>
+        <tr>
+            <td data-label="Planet">Saturn</td>
+            <td data-label="Diameter (km)">120,536</td>
+            <td data-label="Length of Day (hours)">10.7</td>
+            <td data-label="Mean Temp (C)">-140</td>
+        </tr>
+    </tbody>
+</table>*@
 
 @*Bootstrap Grid System*@
 @*<h1>Planets</h1>
@@ -117,63 +117,60 @@
     </div>*@
 
 @* Isotope Metafizzy *@
+<h1>Planets and Dwarf Planets</h1>
+    <div class="button-filter">
+        <button type="button" class="btn btn-primary all active" data-filter="*">All</button>
+        <button type="button" class="btn btn-primary planet" data-filter=".planet">Planets</button>
+        <button type="button" class="btn btn-primary dwarf" data-filter=".dwarf">Dwarf Planets</button>
+    </div>
 
-
-
-@*<h1>Planets and Dwarf Planets</h1>
-<div class="button-filter">
-    <button type="button" class="btn btn-primary all active" data-filter="*">All</button>
-    <button type="button" class="btn btn-primary planet" data-filter=".planet">Planets</button>
-    <button type="button" class="btn btn-primary dwarf" data-filter=".dwarf">Dwarf Planets</button>
-</div>
-
-<div class="container grid-container">
-    <div class="col-md-4 grid-item planet">
-        <div>Planet: Mercury</div>
-        <div>Diameter (km): 4879</div>
-        <div>Length of Day (hours): 4222.6</div>
-        <div>Mean Temp (C): 167</div>
+    <div class="container grid-container">
+        <div class="col-md-4 grid-item planet">
+            <div>Planet: Mercury</div>
+            <div>Diameter (km): 4879</div>
+            <div>Length of Day (hours): 4222.6</div>
+            <div>Mean Temp (C): 167</div>
+        </div>
+        <div class="col-md-4 grid-item dwarf">
+            <div>Dwarf Planet: Ceres</div>
+            <div>Diameter (km): 950</div>
+            <div>Length of Day (hours): 9</div>
+            <div>Mean Temp (C): -106</div>
+        </div>
+        <div class="col-md-4 grid-item planet">
+            <div>Planet: Venus</div>
+            <div>Diameter (km): 12,104</div>
+            <div>Length of Day (hours): 2802.0</div>
+            <div>Mean Temp (C): 464</div>
+        </div>
+        <div class="col-md-4 grid-item dwarf">
+            <div>Dwarf Planet: Pluto</div>
+            <div>Diameter (km): 2,370</div>
+            <div>Length of Day (hours): 153</div>
+            <div>Mean Temp (C): -228</div>
+        </div>
+        <div class="col-md-4 grid-item dwarf">
+            <div>Dwarf Planet: Haumea</div>
+            <div>Diameter (km): 1960x1518x996</div>
+            <div>Length of Day (hours): 4</div>
+            <div>Mean Temp (C): -240</div>
+        </div>
+        <div class="col-md-4 grid-item planet">
+            <div>Planet: Mars</div>
+            <div>Diameter (km): 6792</div>
+            <div>Length of Day (hours): 24.7</div>
+            <div>Mean Temp (C): -65</div>
+        </div>
+        <div class="col-md-4 grid-item planet">
+            <div>Planet: Saturn</div>
+            <div>Diameter (km): 120,536</div>
+            <div>Length of Day (hours): 10.7</div>
+            <div>Mean Temp (C): -140</div>
+        </div>
+        <div class="col-md-4 grid-item dwarf">
+            <div>Dwarf Planet: Eris</div>
+            <div>Diameter (km): 2,326</div>
+            <div>Length of Day (hours): 8</div>
+            <div>Mean Temp (C): -248 to -232</div>
+        </div>
     </div>
-    <div class="col-md-4 grid-item dwarf">
-        <div>Dwarf Planet: Ceres</div>
-        <div>Diameter (km): 950</div>
-        <div>Length of Day (hours): 9</div>
-        <div>Mean Temp (C): -106</div>
-    </div>
-    <div class="col-md-4 grid-item planet">
-        <div>Planet: Venus</div>
-        <div>Diameter (km): 12,104</div>
-        <div>Length of Day (hours): 2802.0</div>
-        <div>Mean Temp (C): 464</div>
-    </div>
-    <div class="col-md-4 grid-item dwarf">
-        <div>Dwarf Planet: Pluto</div>
-        <div>Diameter (km): 2,370</div>
-        <div>Length of Day (hours): 153</div>
-        <div>Mean Temp (C): -228</div>
-    </div>
-    <div class="col-md-4 grid-item dwarf">
-        <div>Dwarf Planet: Haumea</div>
-        <div>Diameter (km): 1960x1518x996</div>
-        <div>Length of Day (hours): 4</div>
-        <div>Mean Temp (C): -240</div>
-    </div>
-    <div class="col-md-4 grid-item planet">
-        <div>Planet: Mars</div>
-        <div>Diameter (km): 6792</div>
-        <div>Length of Day (hours): 24.7</div>
-        <div>Mean Temp (C): -65</div>
-    </div>
-    <div class="col-md-4 grid-item planet">
-        <div>Planet: Saturn</div>
-        <div>Diameter (km): 120,536</div>
-        <div>Length of Day (hours): 10.7</div>
-        <div>Mean Temp (C): -140</div>
-    </div>
-    <div class="col-md-4 grid-item dwarf">
-        <div>Dwarf Planet: Eris</div>
-        <div>Diameter (km): 2,326</div>
-        <div>Length of Day (hours): 8</div>
-        <div>Mean Temp (C): -248 to -232</div>
-    </div>
-</div>*@

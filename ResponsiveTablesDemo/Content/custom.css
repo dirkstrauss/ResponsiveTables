@@ -1,33 +1,35 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 /* FONTS */
 /* SPACING */
-table {
-  font-family: "Roboto", sans-serif; }
-  table caption {
-    font-weight: 700px;
-    font-size: 36px; }
-  table thead tr th {
-    font-weight: 700px;
-    font-size: 26px;
-    padding-right: 20px; }
-  table tbody tr td {
-    font-weight: 400px;
-    font-size: 20px; }
-
-/*.container {
+/*Table Style*/
+/*table {
     font-family: $font-main;
 
-    .tblheader {
+    caption {
         font-weight: $bold;
         font-size: 36px;
+    }
 
-        div {
-            font-weight: $bold;
-            font-size: 26px;
-            padding-right: $baseline;
+    thead {
+        tr {
+            th {
+                font-weight: $bold;
+                font-size: 26px;
+                padding-right: $baseline;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                font-weight: $regular;
+                font-size: 20px;
+            }
         }
     }
 }*/
+/*Responsive table - Start*/
 /*@media screen and (max-width: 600px) {
     table thead {
         border: none;
@@ -54,13 +56,45 @@ table {
     table td::before {
         content: attr(data-label);
         float: left;
+    }    
+}*/
+/*Responsive table - End*/
+/*Bootstrap Grid System - Start*/
+/*.container {
+    font-family: $font-main;
+
+    .tblheader {
+        font-weight: $bold;
+        font-size: 36px;
+
+        div {
+            font-weight: $bold;
+            font-size: 26px;
+            padding-right: $baseline;
+        }
     }
 
     .row {
+        div {
+            font-weight: $regular;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        border-bottom: 3px solid #ddd;
+        
         div::before {
             content: attr(data-label);
             float: left;
             padding-right: $baseline;
+        }
+
+        div {
+            border-bottom: 1px solid #ddd;
+            text-align: right;
         }
 
         &.tblheader {
@@ -68,19 +102,8 @@ table {
         }
     }
 }*/
-/*@media screen and (max-width: 600px) {
-    .grid-item {
-        div::before {
-            content: attr(data-label);
-            float: left;
-            padding-right: $baseline;
-        }
-
-        &.tblheader {
-            display: none;
-        }
-    }
-}*/
+/*Bootstrap Grid System - End*/
+/*Isotope Metafizzy - Start*/
 .button-filter {
   margin-bottom: 20px; }
 
@@ -93,3 +116,5 @@ table {
       background-color: lightgreen; }
     .grid-container .grid-item.dwarf {
       background-color: plum; }
+
+/*Isotope Metafizzy - End*/
