@@ -1,0 +1,124 @@
+﻿@import "_fonts.scss";
+@import "_variables.scss";
+
+
+table {
+    font-family: $font-main;
+
+    caption {
+        font-weight: $bold;
+        font-size: 36px;
+    }
+
+    thead {
+        tr {
+            th {
+                font-weight: $bold;
+                font-size: 26px;
+                padding-right: $baseline;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                font-weight: $regular;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/*.container {
+    font-family: $font-main;
+
+    .tblheader {
+        font-weight: $bold;
+        font-size: 36px;
+
+        div {
+            font-weight: $bold;
+            font-size: 26px;
+            padding-right: $baseline;
+        }
+    }
+}*/
+
+
+/*@media screen and (max-width: 600px) {
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+    }
+
+    .row {
+        div::before {
+            content: attr(data-label);
+            float: left;
+            padding-right: $baseline;
+        }
+
+        &.tblheader {
+            display: none;
+        }
+    }
+}*/
+
+/*@media screen and (max-width: 600px) {
+    .grid-item {
+        div::before {
+            content: attr(data-label);
+            float: left;
+            padding-right: $baseline;
+        }
+
+        &.tblheader {
+            display: none;
+        }
+    }
+}*/
+
+
+.button-filter {
+    margin-bottom: $baseline;
+}
+
+.grid-container {
+    padding-left: 0;
+
+    .grid-item {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+
+        &.planet {
+            background-color: lightgreen;
+        }
+
+        &.dwarf {
+            background-color: plum;
+        }
+    }
+}
